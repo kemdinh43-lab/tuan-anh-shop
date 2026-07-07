@@ -3,7 +3,7 @@ import {
   Search, ShoppingBag, Heart, User, Phone, Menu, X,
   ChevronDown, Star, Shield, Truck, RefreshCw, CreditCard,
   MapPin, Clock, Facebook, Instagram, Youtube, ArrowRight,
-  Plus, Minus, Eye, Check, Package, Flame, BadgeCheck,
+  Plus, Minus, Eye, Check, Package, Flame, BadgeCheck, MessageCircle,
 } from "lucide-react";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
@@ -1216,6 +1216,25 @@ function FAQ() {
 // ── Local SEO ──────────────────────────────────────────────────────────────────
 function LocalSEO() {
   const districts = ["Liên Chiểu", "Hải Châu", "Đà Nẵng"];
+  const [activeMap, setActiveMap] = useState(0);
+  const maps = [
+    {
+      label: "Cơ sở 1",
+      address: BRAND_LOCATIONS[0],
+      src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.886111576379!2d108.14778647615968!3d16.07139868460833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218d63c79743d%3A0xc35eb8083a17f76d!2zNzQxIFTDtG4gxJDhu6ljIFRo4bqvbmcsIExpw6puIENoaeG7g3UsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1783421843952!5m2!1svi!2s",
+    },
+    {
+      label: "Cơ sở 2",
+      address: BRAND_LOCATIONS[1],
+      src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.886111576379!2d108.14778647615968!3d16.07139868460833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218d63e3f18cf%3A0xe945b452ef970c2c!2zNzU1IFTDtG4gxJDhu6ljIFRo4bqvbmcsIExpw6puIENoaeG7g3UsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1783421827106!5m2!1svi!2s",
+    },
+    {
+      label: "Cơ sở 3",
+      address: BRAND_LOCATIONS[2],
+      src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.7110135759476!2d108.2185328887615!3d16.0804791947673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183937ede301%3A0x4653572851c8d1e9!2zMTIwIMSQ4buRbmcgxJBhLCBI4bqjaSBDaMOidSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1783421809471!5m2!1svi!2s",
+    },
+  ];
+
   return (
     <section className="py-16 bg-[#FAF7F4] border-t border-[#EEE8E0]">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
@@ -1275,26 +1294,39 @@ function LocalSEO() {
               </div>
             </div>
           </div>
-          <div className="relative rounded-2xl overflow-hidden h-72 lg:h-80 bg-[#E8E0D8]">
-            <img
-              src="https://images.unsplash.com/photo-1777987601431-8d27d2039cc4?w=900&h=600&fit=crop&auto=format"
-              alt="Showroom giày da Đà Nẵng"
-              className="w-full h-full object-cover opacity-50"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-6 py-5 shadow-xl text-center">
-                <MapPin size={22} className="text-[#8B5E3C] mx-auto mb-2" />
-                <p className="text-[#1B1B1B] font-extrabold text-[15px]">{BRAND_SEO_NAME}</p>
-                <p className="text-gray-500 text-[12px] mt-0.5">3 cơ sở tại Liên Chiểu & Hải Châu</p>
-                <p className="text-gray-400 text-[11px] mt-0.5">SĐT/Zalo: {BRAND_PHONE}</p>
-                <a
-                  href={BRAND_FACEBOOK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[#8B5E3C] text-[12px] font-bold mt-3 hover:underline"
-                >
-                  Xem Facebook <ArrowRight size={12} />
-                </a>
+          <div className="bg-white rounded-2xl overflow-hidden shadow-[0_12px_44px_rgba(27,27,27,0.06)] border border-[#F0E9E1]">
+            <div className="h-72 lg:h-80 bg-[#E8E0D8]">
+              <iframe
+                title={`${BRAND_NAME} ${maps[activeMap].label}`}
+                src={maps[activeMap].src}
+                className="w-full h-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            </div>
+            <div className="p-4 sm:p-5">
+              <div className="flex flex-wrap gap-2 mb-3">
+                {maps.map((map, index) => (
+                  <button
+                    key={map.label}
+                    className={`text-[12px] font-bold px-3 py-2 rounded-full border transition-colors ${
+                      activeMap === index
+                        ? "bg-[#1B1B1B] text-white border-[#1B1B1B]"
+                        : "bg-[#FAF7F4] text-[#1B1B1B] border-[#E8E0D8] hover:border-[#8B5E3C]"
+                    }`}
+                    onClick={() => setActiveMap(index)}
+                  >
+                    {map.label}
+                  </button>
+                ))}
+              </div>
+              <div className="flex gap-3">
+                <MapPin size={16} className="text-[#8B5E3C] flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-[#1B1B1B] font-extrabold text-[13px]">{maps[activeMap].label}</p>
+                  <p className="text-gray-500 text-[12px] leading-relaxed mt-0.5">{maps[activeMap].address}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -2690,6 +2722,33 @@ function Home({
   );
 }
 
+function FloatingCTA() {
+  return (
+    <div className="fixed bottom-4 right-4 z-40 flex flex-col gap-3 sm:bottom-6 sm:right-6">
+      <a
+        href={`tel:${BRAND_TEL}`}
+        aria-label="Gọi shop"
+        title="Gọi shop"
+        className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-[#1B1B1B] text-white shadow-[0_12px_28px_rgba(27,27,27,0.24)] transition-all hover:-translate-y-0.5 hover:bg-[#8B5E3C] focus:outline-none focus:ring-2 focus:ring-[#CFA27A] focus:ring-offset-2 sm:h-14 sm:w-14"
+      >
+        <Phone size={20} strokeWidth={2.2} />
+        <span className="sr-only">Gọi shop</span>
+      </a>
+      <a
+        href={`https://zalo.me/${BRAND_TEL}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Nhắn Zalo"
+        title="Nhắn Zalo"
+        className="flex h-[52px] w-[52px] items-center justify-center rounded-full bg-[#8B5E3C] text-white shadow-[0_12px_28px_rgba(139,94,60,0.28)] transition-all hover:-translate-y-0.5 hover:bg-[#1B1B1B] focus:outline-none focus:ring-2 focus:ring-[#CFA27A] focus:ring-offset-2 sm:h-14 sm:w-14"
+      >
+        <MessageCircle size={21} strokeWidth={2.2} />
+        <span className="sr-only">Nhắn Zalo</span>
+      </a>
+    </div>
+  );
+}
+
 // ── App ────────────────────────────────────────────────────────────────────────
 export default function App() {
   const [page, setPage] = useState<Page>(() => pageFromPath(window.location.pathname));
@@ -2741,6 +2800,7 @@ export default function App() {
           <PolicyPage page={page} onNavigate={go} />
         )}
       </main>
+      <FloatingCTA />
       <Footer onNavigate={go} />
     </div>
   );
