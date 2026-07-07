@@ -721,11 +721,11 @@ function Hero({ onNavigate }: { onNavigate: (p: Page) => void }) {
     <section className="relative min-h-screen flex items-center bg-[#1B1B1B] overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1637689810282-4692c7677feb?w=1920&h=1080&fit=crop&auto=format"
-          alt="Người đàn ông lịch lãm với giày da cao cấp"
-          className="w-full h-full object-cover opacity-35"
+          src="/images/tuan-anh-products/giay-loafer-den-nau.png"
+          alt="Giày da nam Tuấn Anh Shop"
+          className="w-full h-full object-cover opacity-55"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1B1B1B] via-[#1B1B1B]/65 to-[#1B1B1B]/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1B1B1B] via-[#1B1B1B]/72 to-[#1B1B1B]/22" />
       </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 w-full pt-32 pb-20">
@@ -774,16 +774,6 @@ function Hero({ onNavigate }: { onNavigate: (p: Page) => void }) {
             ))}
           </div>
         </div>
-      </div>
-
-      {/* Shoe showcase on right (desktop) */}
-      <div className="absolute right-0 bottom-0 top-[88px] w-[45%] hidden lg:block">
-        <img
-          src="/images/tuan-anh-products/giay-loafer-den-nau.png"
-          alt="Giày da cao cấp trưng bày"
-          className="w-full h-full object-cover opacity-70"
-          style={{ maskImage: "linear-gradient(to right, transparent 0%, black 30%)" }}
-        />
       </div>
     </section>
   );
