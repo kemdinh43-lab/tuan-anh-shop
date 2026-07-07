@@ -45,19 +45,19 @@ interface Product {
 const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: "Oxford Cognac Classic",
+    name: "Giày Oxford Đen - Lịch sự cho gặp khách",
     price: 1290000,
     originalPrice: 1590000,
     rating: 5,
     reviews: 128,
-    image: "https://images.unsplash.com/photo-1777987601431-8d27d2039cc4?w=600&h=750&fit=crop&auto=format",
+    image: "/images/tuan-anh-products/giay-oxford-da-den.png",
     badge: "Bán chạy",
     category: "Oxford",
     colors: ["#8B5E3C", "#1B1B1B"],
   },
   {
     id: 2,
-    name: "Derby Đen Cao Cấp",
+    name: "Giày Derby Đen - Dễ mang cho công sở",
     price: 1190000,
     rating: 5,
     reviews: 96,
@@ -68,19 +68,19 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 3,
-    name: "Loafer Da Lì Velvet",
+    name: "Giày Loafer Nâu - Gọn nhẹ cho smart casual",
     price: 1450000,
     originalPrice: 1750000,
     rating: 5,
     reviews: 73,
-    image: "https://images.unsplash.com/photo-1760616172899-0681b97a2de3?w=600&h=750&fit=crop&auto=format",
+    image: "/images/tuan-anh-products/giay-loafer-da-nau.png",
     badge: "Sale",
     category: "Loafer",
     colors: ["#1B1B1B", "#6B4F3A"],
   },
   {
     id: 4,
-    name: "Chelsea Boot Cognac",
+    name: "Chelsea Boot Cognac - Phối jeans và chinos",
     price: 1690000,
     rating: 5,
     reviews: 54,
@@ -91,7 +91,7 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 5,
-    name: "Oxford Wingtip Brogue",
+    name: "Giày Oxford Cognac - Chỉn chu cho sự kiện",
     price: 1390000,
     originalPrice: 1590000,
     rating: 5,
@@ -103,45 +103,45 @@ const PRODUCTS: Product[] = [
   },
   {
     id: 6,
-    name: "Derby Công Sở Elite",
+    name: "Giày Lười Da Nâu - Dễ dùng hằng ngày",
     price: 1250000,
     rating: 5,
     reviews: 112,
-    image: "https://images.unsplash.com/photo-1668069226492-508742b03147?w=600&h=750&fit=crop&auto=format",
-    category: "Derby",
-    colors: ["#1B1B1B"],
+    image: "/images/tuan-anh-products/giay-luoi-da-nau.png",
+    category: "Loafer",
+    colors: ["#8B5E3C"],
   },
   {
     id: 7,
-    name: "Loafer Tassel Nâu",
+    name: "Dép Da Nâu - Thoải mái cho ngày thường",
     price: 1350000,
     rating: 4,
     reviews: 61,
-    image: "https://images.unsplash.com/photo-1641893843833-a006778dc00b?w=600&h=750&fit=crop&auto=format",
+    image: "/images/tuan-anh-products/dep-da-nau-gian-di.png",
     badge: "Mới",
-    category: "Loafer",
+    category: "Dép da",
     colors: ["#8B5E3C", "#1B1B1B"],
   },
   {
     id: 8,
-    name: "Oxford Monk Strap",
+    name: "Ví Da Nâu Gập Đôi - Gợi ý quà tặng nam",
     price: 1490000,
     rating: 5,
     reviews: 43,
-    image: "https://images.unsplash.com/photo-1625357165350-bdbcb6d7d524?w=600&h=750&fit=crop&auto=format",
+    image: "/images/tuan-anh-products/vi-da-nau-gap-doi.png",
     badge: "Mới",
-    category: "Oxford",
+    category: "Ví da",
     colors: ["#8B5E3C", "#1B1B1B"],
   },
 ];
 
 const CATEGORIES = [
-  { name: "Đi làm hằng ngày", count: 24, image: "https://images.unsplash.com/photo-1640531005390-38bd92755d6a?w=400&h=500&fit=crop&auto=format" },
-  { name: "Gặp khách hàng", count: 18, image: "https://images.unsplash.com/photo-1777987601431-8d27d2039cc4?w=400&h=500&fit=crop&auto=format" },
-  { name: "Dự tiệc & cưới hỏi", count: 15, image: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=400&h=500&fit=crop&auto=format" },
-  { name: "Dễ mang mỗi ngày", count: 12, image: "https://images.unsplash.com/photo-1760616172899-0681b97a2de3?w=400&h=500&fit=crop&auto=format" },
-  { name: "Phối quần jeans", count: 10, image: "https://images.unsplash.com/photo-1638609348722-aa2a3a67db26?w=400&h=500&fit=crop&auto=format" },
-  { name: "Ví & thắt lưng", count: 8, image: "https://images.unsplash.com/photo-1653868250398-8efc756b601d?w=400&h=500&fit=crop&auto=format" },
+  { name: "Oxford", desc: "Công sở, gặp khách, sự kiện", image: "/images/tuan-anh-products/giay-oxford-da-den.png" },
+  { name: "Derby", desc: "Dễ mang cho đi làm hằng ngày", image: "https://images.unsplash.com/photo-1777987601426-c05a82045862?w=400&h=500&fit=crop&auto=format" },
+  { name: "Loafer", desc: "Không dây, tiện, smart casual", image: "/images/tuan-anh-products/giay-loafer-da-nau.png" },
+  { name: "Chelsea Boot", desc: "Cá tính, hợp jeans và chinos", image: "https://images.unsplash.com/photo-1638609348722-aa2a3a67db26?w=400&h=500&fit=crop&auto=format" },
+  { name: "Dép da nam", desc: "Thoải mái cho ngày thường", image: "/images/tuan-anh-products/dep-da-nau-quai-hau.png" },
+  { name: "Ví & thắt lưng", desc: "Phụ kiện da dễ làm quà", image: "/images/tuan-anh-products/combo-vi-da-that-lung-nau.png" },
 ];
 
 const BRAND_NAME = "Tuấn Anh Shop";
@@ -159,67 +159,67 @@ const BRAND_LOCATIONS = [
 
 const REVIEWS = [
   {
-    name: "Khách đi làm văn phòng",
-    role: "Cần giày dễ phối",
+    name: "Đi làm hằng ngày",
+    role: "Ưu tiên dễ mang",
     avatar: "VP",
     rating: 5,
-    date: "Tình huống mua hàng",
-    text: "Thường cần một đôi giày da nam lịch sự, đi cùng quần tây hoặc chinos, màu không quá kén đồ và form đủ thoải mái cho cả ngày làm việc.",
-    product: "Gợi ý: Oxford hoặc Derby",
+    date: "Nhu cầu sử dụng",
+    text: "Ưu tiên form dễ chịu, màu dễ phối và không quá cứng chân khi mang nhiều giờ. Derby hoặc Loafer thường là lựa chọn dễ bắt đầu.",
+    product: "Gợi ý: Derby, Loafer",
   },
   {
-    name: "Khách mua quà cho nam",
-    role: "Cần tư vấn an toàn",
+    name: "Gặp khách hàng",
+    role: "Cần vẻ ngoài chỉn chu",
     avatar: "QA",
     rating: 5,
-    date: "Tình huống mua hàng",
-    text: "Khi chưa chắc size giày, khách có thể chọn ví da, thắt lưng da hoặc nhắn shop trước để hỏi cách chọn mẫu theo độ tuổi, nghề nghiệp và phong cách người nhận.",
-    product: "Gợi ý: Ví da, thắt lưng da",
+    date: "Nhu cầu sử dụng",
+    text: "Nên chọn giày có phom gọn, màu an toàn và dễ phối với quần tây, sơ mi hoặc blazer nhẹ để tổng thể lịch sự hơn.",
+    product: "Gợi ý: Oxford, Derby",
   },
   {
-    name: "Khách dự tiệc/cưới hỏi",
-    role: "Cần vẻ ngoài chỉn chu",
+    name: "Dự tiệc / cưới hỏi",
+    role: "Cần trang trọng hơn",
     avatar: "DT",
     rating: 5,
-    date: "Tình huống mua hàng",
-    text: "Nên ưu tiên giày da có phom gọn, màu hợp với bộ đồ sẽ mặc và thử trực tiếp để kiểm tra độ ôm trước ngày cần sử dụng.",
-    product: "Gợi ý: Oxford, Loafer",
+    date: "Nhu cầu sử dụng",
+    text: "Các dịp cần hình ảnh chỉn chu nên ưu tiên Oxford hoặc những mẫu giày da có đường nét gọn, màu hợp với bộ đồ sẽ mặc.",
+    product: "Gợi ý: Oxford",
   },
   {
-    name: "Khách ở Liên Chiểu/Hải Châu",
-    role: "Muốn ghé thử nhanh",
+    name: "Dễ mang mỗi ngày",
+    role: "Cần tiện và linh hoạt",
     avatar: "DN",
     rating: 5,
-    date: "Tình huống mua hàng",
-    text: "Có thể chọn cơ sở gần nhất trên Tôn Đức Thắng hoặc Đống Đa, gọi/Zalo trước để hỏi mẫu quan tâm rồi ghé thử trực tiếp.",
-    product: "Gợi ý: Gọi shop trước khi ghé",
+    date: "Nhu cầu sử dụng",
+    text: "Nếu muốn một đôi gọn, dễ xỏ và dùng được với nhiều trang phục, Loafer hoặc dép da nam sẽ phù hợp hơn các mẫu quá trang trọng.",
+    product: "Gợi ý: Loafer, dép da",
   },
 ];
 
 const FAQS = [
   {
-    q: "Tuấn Anh Shop bán những sản phẩm gì?",
-    a: "Tuấn Anh Shop kinh doanh giày da, ví da, thắt lưng da và phụ kiện da cho nam. Nội dung tư vấn tập trung vào dịp sử dụng, màu sắc dễ phối, form chân và lựa chọn phù hợp khi khách ghé cửa hàng.",
+    q: "Shop có tư vấn size trước khi đặt không?",
+    a: `Có. Bạn có thể gọi/Zalo ${BRAND_PHONE}, gửi chiều dài bàn chân hoặc size thường mang để shop tư vấn trước theo từng mẫu.`,
   },
   {
-    q: "Tôi cần tư vấn size thì liên hệ ở đâu?",
-    a: `Bạn có thể gọi/Zalo ${BRAND_PHONE}, gửi chiều dài bàn chân hoặc mẫu đang quan tâm để shop tư vấn trước. Nếu ở gần Liên Chiểu hoặc Hải Châu, cách chắc nhất vẫn là ghé cơ sở gần nhất để thử form.`,
+    q: "Giày nào phù hợp đi làm hằng ngày?",
+    a: "Nếu cần đi làm hằng ngày, Derby hoặc Loafer thường dễ dùng hơn vì vừa lịch sự vừa không quá trang trọng. Màu đen, nâu hoặc cognac sẽ dễ phối với quần tây và chinos.",
   },
   {
-    q: "Thông tin hỗ trợ sau mua như thế nào?",
-    a: "Thông tin hỗ trợ sau mua sẽ được cửa hàng tư vấn trực tiếp theo từng sản phẩm và đơn hàng. Bạn nên giữ hóa đơn hoặc thông tin mua hàng để shop tra cứu khi cần.",
+    q: "Oxford và Derby khác nhau thế nào?",
+    a: "Oxford thường gọn và trang trọng hơn, hợp gặp khách hàng hoặc sự kiện. Derby có phần buộc dây mở nên dễ mang hơn, phù hợp người mới mua giày da hoặc dùng đi làm hằng ngày.",
   },
   {
-    q: "Tôi nên ghé cơ sở nào?",
-    a: "Nếu ở khu vực Liên Chiểu, bạn có thể ghé 741 hoặc 755 Tôn Đức Thắng. Nếu ở trung tâm Đà Nẵng, cơ sở 120 Đống Đa, Hải Châu sẽ thuận tiện hơn. Nên gọi/Zalo trước nếu muốn hỏi mẫu cụ thể.",
+    q: "Không vừa size có đổi được không?",
+    a: "Shop sẽ tư vấn thông tin hỗ trợ đổi size theo điều kiện của từng đơn hàng. Trước khi đặt, bạn nên hỏi kỹ size, form giày và điều kiện hỗ trợ để hạn chế đổi trả.",
   },
   {
-    q: "Làm sao để chọn đúng size?",
-    a: "Đo chiều dài bàn chân vào cuối ngày, ghi chú thêm chân thon, chân bè hoặc mu cao. Với giày da nam, cùng một size nhưng từng phom có thể ôm khác nhau, vì vậy nên nhắn shop trước hoặc ghé thử trực tiếp.",
+    q: "Có thể ghé cửa hàng xem trực tiếp không?",
+    a: `Có. Tuấn Anh Shop có 3 cơ sở: ${BRAND_LOCATIONS.join("; ")}. Bạn có thể gọi/Zalo ${BRAND_PHONE} trước khi ghé để hỏi mẫu quan tâm.`,
   },
   {
-    q: "Có showroom để thử giày không?",
-    a: `Có. Tuấn Anh Shop có 3 cơ sở: ${BRAND_LOCATIONS.join("; ")}. Bạn có thể gọi/Zalo ${BRAND_PHONE} trước khi ghé để được tư vấn mẫu, màu và size phù hợp.`,
+    q: "Ngoài giày da nam, shop có phụ kiện không?",
+    a: "Có. Tuấn Anh Shop có ví da, thắt lưng da và phụ kiện da cho nam, phù hợp để phối cùng giày hoặc chọn làm quà tặng.",
   },
 ];
 
@@ -246,7 +246,7 @@ const BLOG_POSTS = [
     category: "Quà tặng",
     date: "12/06/2025",
     readTime: "5 phút",
-    image: "https://images.unsplash.com/photo-1573832959141-4f798a677b7d?w=600&h=380&fit=crop&auto=format",
+    image: "/images/tuan-anh-products/bo-phu-kien-da-nam.png",
   },
 ];
 
@@ -732,18 +732,18 @@ function Hero({ onNavigate }: { onNavigate: (p: Page) => void }) {
         <div className="max-w-[560px]">
           <div className="inline-flex items-center gap-2 border border-[#8B5E3C]/50 text-[#8B5E3C] text-[10px] font-bold tracking-[0.35em] uppercase px-4 py-2 rounded-full mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-[#8B5E3C] animate-pulse" />
-            {BRAND_NAME} · 3 cơ sở tại Đà Nẵng
+            {BRAND_NAME} · Giày da nam & phụ kiện da
           </div>
 
           <h1 className="text-white text-[44px] sm:text-[56px] lg:text-[64px] font-extrabold leading-[1.05] tracking-tight mb-5">
-            {BRAND_NAME}<br />
-            <span className="text-[#8B5E3C]">Giày Da</span><br />
-            Đà Nẵng
+            Giày da nam<br />
+            <span className="text-[#8B5E3C]">lịch lãm</span><br />
+            cho công sở
           </h1>
 
           <p className="text-white/65 text-[15px] sm:text-[17px] leading-relaxed mb-10 max-w-[440px]">
-            Chọn giày da đi làm, ví da gọn tay, thắt lưng dễ phối và phụ kiện da cho nam.
-            Ghé trực tiếp 3 cơ sở tại Liên Chiểu & Hải Châu để xem mẫu, thử form và hỏi size trước khi mua.
+            Tuấn Anh Shop tuyển chọn các mẫu giày da nam dễ mang, dễ phối và phù hợp với nhu cầu
+            đi làm, gặp khách hàng, dự tiệc hoặc sử dụng hằng ngày.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-14">
@@ -751,21 +751,21 @@ function Hero({ onNavigate }: { onNavigate: (p: Page) => void }) {
               className="bg-[#8B5E3C] text-white font-bold px-8 py-4 rounded-full hover:bg-[#7A5232] transition-all hover:shadow-[0_8px_32px_rgba(139,94,60,0.45)] text-[14px] tracking-wide"
               onClick={() => onNavigate("products")}
             >
-              Xem mẫu giày
+              Xem sản phẩm
             </button>
             <button
               className="border border-white/30 text-white font-medium px-8 py-4 rounded-full hover:bg-white/10 transition-all text-[14px] backdrop-blur-sm"
-              onClick={() => onNavigate("contact")}
+              onClick={() => onNavigate("size-guide")}
             >
-              Xem địa chỉ cửa hàng →
+              Tư vấn chọn size →
             </button>
           </div>
 
           <div className="flex gap-10 pt-8 border-t border-white/10">
             {[
-              { val: "2", label: "Cơ sở Tôn Đức Thắng" },
-              { val: "1", label: "Cơ sở Đống Đa" },
-              { val: "Zalo", label: "Tư vấn size" },
+              { val: "Oxford", label: "Gặp khách, sự kiện" },
+              { val: "Derby", label: "Đi làm hằng ngày" },
+              { val: "Loafer", label: "Dễ mang, smart casual" },
             ].map((s) => (
               <div key={s.label}>
                 <div className="text-white font-extrabold text-xl">{s.val}</div>
@@ -779,7 +779,7 @@ function Hero({ onNavigate }: { onNavigate: (p: Page) => void }) {
       {/* Shoe showcase on right (desktop) */}
       <div className="absolute right-0 bottom-0 top-[88px] w-[45%] hidden lg:block">
         <img
-          src="https://images.unsplash.com/photo-1775903961719-af9e79063146?w=900&h=1100&fit=crop&auto=format"
+          src="/images/tuan-anh-products/giay-loafer-den-nau.png"
           alt="Giày da cao cấp trưng bày"
           className="w-full h-full object-cover opacity-70"
           style={{ maskImage: "linear-gradient(to right, transparent 0%, black 30%)" }}
@@ -792,12 +792,12 @@ function Hero({ onNavigate }: { onNavigate: (p: Page) => void }) {
 // ── USP Strip ──────────────────────────────────────────────────────────────────
 function USPStrip() {
   const items = [
-    { icon: BadgeCheck, title: "Chọn Theo Dịp", desc: "Đi làm, gặp khách, dự tiệc" },
-    { icon: Shield, title: "Ghé Thử Trực Tiếp", desc: "Kiểm tra form trước khi mua" },
-    { icon: RefreshCw, title: "Phối Đồng Bộ", desc: "Giày, ví, thắt lưng" },
-    { icon: Truck, title: "3 Cơ Sở", desc: "Liên Chiểu & Hải Châu" },
-    { icon: CreditCard, title: "Tư Vấn Size", desc: "Gọi/Zalo trước khi ghé" },
-    { icon: Package, title: "Mua Quà Nam", desc: "Gợi ý mẫu dễ dùng" },
+    { icon: BadgeCheck, title: "Tư Vấn Theo Nhu Cầu", desc: "Đi làm, gặp khách, dự tiệc" },
+    { icon: Shield, title: "Hỗ Trợ Chọn Size", desc: "Hỏi form trước khi đặt" },
+    { icon: RefreshCw, title: "Gợi Ý Màu Dễ Phối", desc: "Đen, nâu, cognac" },
+    { icon: Truck, title: "Có Thể Ghé Thử", desc: "3 cơ sở tại Đà Nẵng" },
+    { icon: CreditCard, title: "Phối Phụ Kiện", desc: "Ví da, thắt lưng da" },
+    { icon: Package, title: "Hỗ Trợ Sau Mua", desc: "Theo từng đơn hàng" },
   ];
   return (
     <section className="bg-white border-y border-[#F0E9E1] py-10">
@@ -828,8 +828,8 @@ function Categories({ onNavigate }: { onNavigate: (p: Page) => void }) {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
         <div className="text-center mb-12">
           <span className="text-[#8B5E3C] text-[10px] font-bold tracking-[0.35em] uppercase">Danh mục</span>
-          <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold mt-2">Chọn theo nhu cầu sử dụng</h2>
-          <p className="text-gray-500 text-[13px] mt-2">Bắt đầu từ hoàn cảnh bạn mang nhiều nhất, rồi chọn form và màu phù hợp</p>
+          <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold mt-2">Chọn giày theo kiểu dáng</h2>
+          <p className="text-gray-500 text-[13px] mt-2">Mỗi kiểu giày phù hợp với một hoàn cảnh sử dụng khác nhau</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
           {CATEGORIES.map((cat) => (
@@ -848,7 +848,7 @@ function Categories({ onNavigate }: { onNavigate: (p: Page) => void }) {
               <div className="absolute inset-0 bg-gradient-to-t from-[#1B1B1B]/85 via-[#1B1B1B]/15 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <p className="text-white font-bold text-[13px] leading-snug">{cat.name}</p>
-                <p className="text-white/55 text-[11px]">{cat.count} gợi ý</p>
+                <p className="text-white/55 text-[11px]">{cat.desc}</p>
               </div>
             </div>
           ))}
@@ -869,8 +869,8 @@ function BestSellers({
   const [tab, setTab] = useState<"best" | "new">("best");
   const shown =
     tab === "best"
-      ? PRODUCTS.filter((_, i) => [0, 2, 4, 5].includes(i))
-      : PRODUCTS.filter((_, i) => [1, 3, 6, 7].includes(i));
+      ? PRODUCTS
+      : PRODUCTS.filter((_, i) => [1, 2, 5, 6, 7, 0, 3, 4].includes(i));
 
   return (
     <section className="py-20 bg-white">
@@ -878,9 +878,9 @@ function BestSellers({
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-10">
           <div>
             <span className="text-[#8B5E3C] text-[10px] font-bold tracking-[0.35em] uppercase">Nổi bật</span>
-            <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold mt-1">Mẫu dễ bắt đầu</h2>
+            <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold mt-1">Mẫu giày được quan tâm</h2>
             <p className="text-gray-500 text-[13px] mt-2 max-w-xl">
-              Các lựa chọn phù hợp cho khách cần một đôi giày da nam Đà Nẵng để đi làm, gặp khách hàng hoặc phối cùng phụ kiện da.
+              Tên sản phẩm được viết theo nhu cầu sử dụng để khách dễ hiểu mẫu nào hợp đi làm, gặp khách, dự tiệc hoặc dùng hằng ngày.
             </p>
           </div>
           <div className="flex bg-[#F5F0EB] rounded-full p-1 gap-1">
@@ -892,7 +892,7 @@ function BestSellers({
                 }`}
                 onClick={() => setTab(t)}
               >
-                {t === "best" ? "Dễ phối" : "Mẫu mới"}
+                {t === "best" ? "Đang quan tâm" : "Dễ bắt đầu"}
               </button>
             ))}
           </div>
@@ -980,57 +980,38 @@ function FlashSale({
 // ── Production Process ─────────────────────────────────────────────────────────
 function Production() {
   const steps = [
-    { num: "01", title: "Xác định dịp dùng", desc: "Đi làm hằng ngày, gặp khách, dự tiệc hay mua làm quà cho nam." },
-    { num: "02", title: "Chọn form và màu", desc: "Ưu tiên màu dễ phối, form hợp chân và trang phục bạn thường mặc." },
-    { num: "03", title: "Thử size thực tế", desc: "Kiểm tra mũi chân, mu bàn chân, gót và cảm giác khi bước vài vòng." },
-    { num: "04", title: "Phối phụ kiện", desc: "Có thể chọn thêm ví da hoặc thắt lưng da để tổng thể gọn và đồng bộ." },
-    { num: "05", title: "Xác nhận trước khi mua", desc: "Hỏi rõ thông tin sản phẩm, hỗ trợ sau mua và cách liên hệ khi cần." },
+    { num: "01", title: "Bắt đầu từ hoàn cảnh sử dụng", desc: "Đi làm hằng ngày, gặp khách hàng, dự tiệc hay cần một đôi dễ mang thường xuyên." },
+    { num: "02", title: "Chọn kiểu giày phù hợp", desc: "Oxford chỉn chu hơn, Derby dễ tiếp cận hơn, Loafer tiện hơn, Chelsea Boot nổi bật hơn." },
+    { num: "03", title: "Ưu tiên màu dễ phối", desc: "Đen phù hợp môi trường lịch sự; nâu hoặc cognac trẻ hơn và dễ phối với chinos, jeans." },
+    { num: "04", title: "Kiểm tra form và size", desc: "Cùng một size nhưng từng kiểu giày có thể ôm khác nhau ở mũi chân, mu bàn chân và gót." },
+    { num: "05", title: "Hỏi chính sách trước khi mua", desc: "Trước khi đặt, nên xác nhận size, tình trạng sản phẩm và điều kiện hỗ trợ sau mua." },
   ];
 
   return (
     <section className="py-20 bg-[#FAF7F4]">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <span className="text-[#8B5E3C] text-[10px] font-bold tracking-[0.35em] uppercase">Cách chọn</span>
-            <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold mt-2 mb-4 leading-tight">
-              Mua giày da dễ hơn<br />khi biết mình cần gì
-            </h2>
-            <p className="text-gray-500 text-[14px] leading-relaxed mb-10">
-              Thay vì chọn theo cảm tính, Tuấn Anh Shop gợi ý khách bắt đầu từ hoàn cảnh sử dụng,
-              sau đó thử form, màu và phụ kiện đi kèm để quyết định chắc hơn.
-            </p>
-            <div className="space-y-6">
-              {steps.map(({ num, title, desc }) => (
-                <div key={num} className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white border border-[#8B5E3C]/20 flex items-center justify-center shadow-sm">
-                    <span className="text-[#8B5E3C] text-[11px] font-extrabold">{num}</span>
-                  </div>
-                  <div className="pt-1.5">
-                    <p className="text-[#1B1B1B] font-bold text-[14px]">{title}</p>
-                    <p className="text-gray-500 text-[12px] mt-0.5 leading-relaxed">{desc}</p>
-                  </div>
+        <div className="max-w-3xl">
+          <span className="text-[#8B5E3C] text-[10px] font-bold tracking-[0.35em] uppercase">Cách chọn</span>
+          <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold mt-2 mb-4 leading-tight">
+            Chưa biết chọn mẫu nào? Bắt đầu từ nhu cầu sử dụng
+          </h2>
+          <p className="text-gray-500 text-[14px] leading-relaxed mb-10">
+            Nếu cần giày đi làm hằng ngày, Derby hoặc Loafer thường dễ dùng hơn. Nếu cần sự chỉn chu
+            khi gặp khách hàng hoặc dự tiệc, Oxford là lựa chọn phù hợp hơn. Nếu muốn phong cách cá tính,
+            Chelsea Boot có thể là điểm nhấn tốt.
+          </p>
+          <div className="space-y-6">
+            {steps.map(({ num, title, desc }) => (
+              <div key={num} className="flex gap-4">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white border border-[#8B5E3C]/20 flex items-center justify-center shadow-sm">
+                  <span className="text-[#8B5E3C] text-[11px] font-extrabold">{num}</span>
                 </div>
-              ))}
-            </div>
-          </div>
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden aspect-[4/5]">
-              <img
-                src="https://images.unsplash.com/photo-1573832959141-4f798a677b7d?w=800&h=1000&fit=crop&auto=format"
-                alt="Thợ giày lành nghề hoàn thiện đôi giày da thủ công"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl p-5 shadow-[0_8px_40px_rgba(27,27,27,0.12)]">
-              <p className="text-[#1B1B1B] font-extrabold text-2xl">3</p>
-              <p className="text-gray-500 text-[12px]">Cơ sở để ghé thử</p>
-            </div>
-            <div className="absolute -top-5 -right-5 bg-[#8B5E3C] rounded-2xl p-5 shadow-[0_8px_40px_rgba(139,94,60,0.3)]">
-              <p className="text-white font-extrabold text-2xl">Zalo</p>
-              <p className="text-white/80 text-[12px]">Hỏi size trước</p>
-            </div>
+                <div className="pt-1.5">
+                  <p className="text-[#1B1B1B] font-bold text-[14px]">{title}</p>
+                  <p className="text-gray-500 text-[12px] mt-0.5 leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -1044,12 +1025,12 @@ function Reviews() {
     <section className="py-20 bg-white">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
         <div className="text-center mb-12">
-          <span className="text-[#8B5E3C] text-[10px] font-bold tracking-[0.35em] uppercase">Tư vấn mua hàng</span>
-          <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold mt-2">Khách thường cần gì?</h2>
+          <span className="text-[#8B5E3C] text-[10px] font-bold tracking-[0.35em] uppercase">Nhu cầu sử dụng</span>
+          <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold mt-2">Bạn cần giày cho dịp nào?</h2>
           <div className="flex items-center justify-center gap-2 mt-3">
             <Stars n={5} size={15} />
-            <span className="text-[#1B1B1B] font-bold text-[14px]">Tư vấn theo nhu cầu</span>
-            <span className="text-gray-400 text-[13px]">· Size, màu, dịp sử dụng</span>
+            <span className="text-[#1B1B1B] font-bold text-[14px]">Chọn theo hoàn cảnh</span>
+            <span className="text-gray-400 text-[13px]">· Đi làm, gặp khách, dự tiệc</span>
           </div>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -2126,10 +2107,31 @@ function CheckoutPage({ onNavigate }: { onNavigate: (p: Page) => void }) {
 
 // ── Marketing Pages ───────────────────────────────────────────────────────────
 function AboutPage({ onNavigate }: { onNavigate: (p: Page) => void }) {
-  const values = [
-    { icon: Shield, title: "Giày da & phụ kiện da", text: "Tập trung các dòng giày da, ví da, thắt lưng da và phụ kiện da cho nam giới." },
-    { icon: BadgeCheck, title: "Tư vấn trực tiếp", text: "Khách có thể ghé cửa hàng để xem mẫu, thử form và được tư vấn chọn size phù hợp." },
-    { icon: RefreshCw, title: "3 cơ sở tại Đà Nẵng", text: "Có mặt tại Liên Chiểu và Hải Châu để khách thuận tiện ghé mua sắm." },
+  const customerGroups = [
+    "Nam giới đi làm văn phòng",
+    "Người thường gặp khách hàng",
+    "Người cần giày dự tiệc / cưới hỏi",
+    "Người mới bắt đầu mua giày da",
+    "Người cần ví da, thắt lưng da hoặc phụ kiện da làm quà",
+  ];
+  const consultSteps = [
+    { icon: BadgeCheck, title: "Hỏi nhu cầu sử dụng", text: "Đi làm hằng ngày, gặp khách hàng, dự tiệc hay cần một đôi dễ mang thường xuyên." },
+    { icon: Package, title: "Gợi ý kiểu giày", text: "Oxford, Derby, Loafer, Chelsea Boot hoặc dép da nam tùy hoàn cảnh sử dụng." },
+    { icon: RefreshCw, title: "Tư vấn màu dễ phối", text: "Đen cho sự lịch sự, nâu/cognac cho phong cách trẻ hơn và dễ phối smart casual." },
+    { icon: Shield, title: "Kiểm tra size và form", text: "Cùng một size nhưng từng kiểu giày có thể ôm khác nhau ở mũi, mu bàn chân và gót." },
+  ];
+  const productFocus = [
+    { name: "Oxford", text: "Cho công sở, gặp khách và sự kiện cần hình ảnh chỉn chu.", image: "/images/tuan-anh-products/giay-oxford-da-den.png" },
+    { name: "Derby", text: "Dễ mang hơn, phù hợp đi làm hằng ngày và người mới mua giày da.", image: "https://images.unsplash.com/photo-1777987601426-c05a82045862?w=500&h=600&fit=crop&auto=format" },
+    { name: "Loafer", text: "Không dây, tiện, gọn và hợp phong cách smart casual.", image: "/images/tuan-anh-products/giay-loafer-da-nau.png" },
+    { name: "Ví & thắt lưng", text: "Phụ kiện da dễ phối cùng giày hoặc chọn làm quà tặng nam.", image: "/images/tuan-anh-products/combo-vi-da-that-lung-nau.png" },
+  ];
+  const priorities = [
+    "Tư vấn rõ trước khi mua",
+    "Không cố gợi ý mẫu không phù hợp nhu cầu",
+    "Hỗ trợ chọn size theo từng form giày",
+    "Thông tin sản phẩm và giá hiển thị rõ ràng",
+    "Hỗ trợ sau mua theo từng đơn hàng cụ thể",
   ];
 
   return (
@@ -2137,54 +2139,185 @@ function AboutPage({ onNavigate }: { onNavigate: (p: Page) => void }) {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-6 pb-20">
         <Breadcrumb current="Giới thiệu" onNavigate={onNavigate} />
         <PageHero
-          eyebrow={BRAND_SEO_NAME}
-          title={`${BRAND_NAME} - shop giày da tại Đà Nẵng.`}
-          text="Một địa chỉ để khách nam tại Đà Nẵng xem giày da, thử form, chọn ví da hoặc thắt lưng da phù hợp với công việc, dịp gặp khách và nhu cầu làm quà."
-          image="https://images.unsplash.com/photo-1573832959141-4f798a677b7d?w=1600&h=1000&fit=crop&auto=format"
-          action="Xem bộ sưu tập"
+          eyebrow="Về Tuấn Anh Shop"
+          title="Giày da nam dễ mang, dễ phối và được tư vấn đúng nhu cầu."
+          text="Tuấn Anh Shop tập trung vào giày da nam, ví da, thắt lưng da và phụ kiện da phù hợp với nhu cầu đi làm, gặp khách hàng, dự tiệc hoặc sử dụng hằng ngày."
+          image="/images/tuan-anh-products/giay-loafer-den-nau.png"
+          action="Xem sản phẩm phù hợp"
           onAction={() => onNavigate("products")}
         />
 
         <section className="grid lg:grid-cols-[0.95fr_1.05fr] gap-8 lg:gap-12 items-center mb-14 sm:mb-20">
           <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-[#F5F0EB]">
             <img
-              src="https://images.unsplash.com/photo-1653868251002-dbeae91e1960?w=900&h=1100&fit=crop&auto=format"
-              alt="Quy trình chăm sóc giày da nam"
+              src="/images/tuan-anh-products/bo-phu-kien-da-nam.png"
+              alt="Giày da và phụ kiện da nam Tuấn Anh Shop"
               className="w-full h-full object-cover"
             />
           </div>
           <div>
             <span className="text-[10px] text-[#8B5E3C] font-bold uppercase tracking-[0.3em]">
-              Triết lý sản phẩm
+              Shop dành cho ai?
             </span>
             <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold leading-tight mt-3 mb-5">
-              Nội dung tư vấn bắt đầu từ người mang, không chỉ từ sản phẩm.
+              Chúng tôi bán cho những khách hàng cần sự chỉn chu mỗi ngày.
             </h2>
             <p className="text-gray-500 text-[14px] leading-relaxed mb-6">
-              {BRAND_NAME} phục vụ khách đang tìm giày da Đà Nẵng, giày da nam Đà Nẵng,
-              ví da Đà Nẵng và thắt lưng da Đà Nẵng theo cách dễ quyết định hơn: bạn cần đi làm,
-              dự tiệc, gặp khách hàng hay mua quà, shop sẽ gợi ý nhóm sản phẩm và cơ sở thuận tiện để ghé thử.
+              {BRAND_NAME} phù hợp với nam giới cần một đôi giày chỉn chu cho công việc,
+              gặp khách hàng, sự kiện hoặc những dịp cần hình ảnh lịch sự hơn. Các mẫu sản phẩm
+              được định hướng theo tính ứng dụng: dễ phối, dễ dùng và không quá cầu kỳ.
             </p>
-            <div className="grid sm:grid-cols-3 gap-3">
-              {["2 cơ sở Liên Chiểu", "1 cơ sở Hải Châu", "Gọi/Zalo trước"].map((s) => (
-                <div key={s} className="bg-[#FAF7F4] rounded-2xl p-4">
-                  <p className="text-[#1B1B1B] font-extrabold text-[15px]">{s}</p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {customerGroups.map((item) => (
+                <div key={item} className="bg-[#FAF7F4] rounded-2xl p-4 flex items-start gap-3">
+                  <Check size={15} className="text-[#8B5E3C] flex-shrink-0 mt-0.5" />
+                  <p className="text-[#1B1B1B] font-bold text-[13px] leading-snug">{item}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="grid sm:grid-cols-3 gap-4">
-          {values.map(({ icon: Icon, title, text }) => (
-            <article key={title} className="bg-[#FAF7F4] rounded-2xl p-5 sm:p-6">
-              <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center mb-4">
-                <Icon size={18} className="text-[#8B5E3C]" />
+        <section className="mb-14 sm:mb-20">
+          <div className="max-w-3xl mb-8">
+            <span className="text-[10px] text-[#8B5E3C] font-bold uppercase tracking-[0.3em]">
+              Cách shop tư vấn
+            </span>
+            <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold leading-tight mt-3 mb-4">
+              Một đôi giày đẹp chưa chắc đã phù hợp với tất cả mọi người.
+            </h2>
+            <p className="text-gray-500 text-[14px] leading-relaxed">
+              Vì vậy, Tuấn Anh Shop tư vấn dựa trên nhu cầu sử dụng, dáng chân, màu sắc thường mặc
+              và hoàn cảnh khách cần dùng giày. Khách có thể hỏi trước qua điện thoại/Zalo hoặc ghé
+              trực tiếp cửa hàng để xem mẫu và thử form.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {consultSteps.map(({ icon: Icon, title, text }) => (
+              <article key={title} className="bg-[#FAF7F4] rounded-2xl p-5 sm:p-6">
+                <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center mb-4">
+                  <Icon size={18} className="text-[#8B5E3C]" />
+                </div>
+                <h3 className="text-[#1B1B1B] font-extrabold text-[15px] mb-2">{title}</h3>
+                <p className="text-gray-500 text-[13px] leading-relaxed">{text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-14 sm:mb-20">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+            <div>
+              <span className="text-[10px] text-[#8B5E3C] font-bold uppercase tracking-[0.3em]">
+                Sản phẩm tập trung
+              </span>
+              <h2 className="text-[#1B1B1B] text-3xl sm:text-4xl font-extrabold leading-tight mt-3">
+                Giày da nam và phụ kiện da dễ ứng dụng.
+              </h2>
+            </div>
+            <p className="text-gray-500 text-[13px] leading-relaxed max-w-lg">
+              Website demo tập trung vào các nhóm sản phẩm có nhu cầu thực tế: giày da nam,
+              dép da nam, ví da, thắt lưng da và phụ kiện da.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {productFocus.map((item) => (
+              <article key={item.name} className="group bg-white border border-[#F0E9E1] rounded-2xl overflow-hidden">
+                <div className="aspect-[4/3] bg-[#F5F0EB] overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={`${item.name} - ${BRAND_NAME}`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-[#1B1B1B] font-extrabold text-[15px] mb-2">{item.name}</h3>
+                  <p className="text-gray-500 text-[13px] leading-relaxed">{item.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="grid lg:grid-cols-[1.05fr_0.95fr] gap-6 lg:gap-8 mb-14 sm:mb-20">
+          <div className="bg-[#1B1B1B] text-white rounded-2xl p-6 sm:p-8">
+            <span className="text-[10px] text-[#CFA27A] font-bold uppercase tracking-[0.3em]">
+              Thông tin cửa hàng
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight mt-3 mb-4">
+              Có thể ghé cửa hàng để xem sản phẩm trực tiếp.
+            </h2>
+            <p className="text-white/55 text-[14px] leading-relaxed mb-6">
+              {BRAND_NAME} có 3 cơ sở tại Liên Chiểu và Hải Châu, Đà Nẵng. Khách có thể gọi/Zalo
+              trước để hỏi mẫu, size hoặc cơ sở thuận tiện trước khi ghé.
+            </p>
+            <div className="space-y-3">
+              {BRAND_LOCATIONS.map((location, index) => (
+                <div key={location} className="flex gap-3 text-[13px] text-white/75">
+                  <MapPin size={15} className="text-[#CFA27A] flex-shrink-0 mt-0.5" />
+                  <span>Cơ sở {index + 1}: {location}</span>
+                </div>
+              ))}
+              <div className="flex gap-3 text-[13px] text-white/75">
+                <Phone size={15} className="text-[#CFA27A] flex-shrink-0 mt-0.5" />
+                <a href={`tel:${BRAND_TEL}`} className="hover:text-[#CFA27A] transition-colors">
+                  SĐT/Zalo: {BRAND_PHONE}
+                </a>
               </div>
-              <h3 className="text-[#1B1B1B] font-extrabold text-[15px] mb-2">{title}</h3>
-              <p className="text-gray-500 text-[13px] leading-relaxed">{text}</p>
-            </article>
-          ))}
+              <div className="flex gap-3 text-[13px] text-white/75">
+                <Facebook size={15} className="text-[#CFA27A] flex-shrink-0 mt-0.5" />
+                <a href={BRAND_FACEBOOK} target="_blank" rel="noopener noreferrer" className="hover:text-[#CFA27A] transition-colors">
+                  Facebook: {BRAND_FACEBOOK}
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#FAF7F4] rounded-2xl p-6 sm:p-8">
+            <span className="text-[10px] text-[#8B5E3C] font-bold uppercase tracking-[0.3em]">
+              Ưu tiên khi tư vấn
+            </span>
+            <h2 className="text-[#1B1B1B] text-2xl sm:text-3xl font-extrabold leading-tight mt-3 mb-5">
+              Rõ ràng trước khi khách quyết định mua.
+            </h2>
+            <div className="space-y-3">
+              {priorities.map((item) => (
+                <div key={item} className="flex gap-3">
+                  <Check size={15} className="text-[#8B5E3C] flex-shrink-0 mt-0.5" />
+                  <p className="text-[#1B1B1B] text-[13px] font-semibold leading-relaxed">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#FAF7F4] rounded-2xl p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+          <div>
+            <span className="text-[10px] text-[#8B5E3C] font-bold uppercase tracking-[0.3em]">
+              Bắt đầu chọn giày
+            </span>
+            <h2 className="text-[#1B1B1B] text-2xl sm:text-3xl font-extrabold leading-tight mt-3 mb-2">
+              Chưa chắc nên chọn mẫu nào?
+            </h2>
+            <p className="text-gray-500 text-[13px] leading-relaxed max-w-xl">
+              Xem sản phẩm theo kiểu dáng hoặc liên hệ Tuấn Anh Shop để được tư vấn size,
+              màu sắc và mẫu phù hợp với nhu cầu sử dụng.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <button
+              className="bg-[#1B1B1B] text-white font-bold px-6 py-3.5 rounded-full text-[13px] hover:bg-[#333] transition-colors"
+              onClick={() => onNavigate("products")}
+            >
+              Xem sản phẩm phù hợp
+            </button>
+            <button
+              className="bg-[#8B5E3C] text-white font-bold px-6 py-3.5 rounded-full text-[13px] hover:bg-[#7A5232] transition-colors"
+              onClick={() => onNavigate("contact")}
+            >
+              Liên hệ tư vấn size
+            </button>
+          </div>
         </section>
       </div>
     </div>
